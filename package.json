@@ -1,0 +1,22 @@
+{
+  "name": "foodila",
+  "version": "1.0.0",
+  "description": "This is web app of food company",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsx": "^0.9.89",
+    "parcel": "^2.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
