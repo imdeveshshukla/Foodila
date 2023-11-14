@@ -1,0 +1,27 @@
+.myNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid brown;
+}
+.logoImg{
+    width: 70px;
+    height: 50px;
+    padding: 5px;
+}
+.navItems{
+    list-style: none;
+    display: flex;
+    gap : 10px;
+}
+.restCard{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.resImg{
+    width: 100%;
+    height: 100%;
+}
