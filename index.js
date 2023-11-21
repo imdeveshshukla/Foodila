@@ -14,24 +14,39 @@ const NavBar = () =>(
     </nav>
 );
 
-const RestCard = () =>(
-    <div className="restCard">
-    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ocnednlkd4vcs04iznu1" alt="resImg" className="resImg" />
+const RestCard = ({ restr }) => {
     
-    <h3>{restList[0].info.name}</h3>
-    <span>{restList[0].info.cuisines.join(",")}</span>
-    <h6>3.6 star</h6>
-    <h7>{restList[0].info.areaName}</h7>
+    const {name,cuisines,cloudinaryImageId,sla,areaName} = restr.info;
+    
+    return(
+    <div className="restCard">
+    <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} alt="resImg" className="resImg" />
+    
+    <h3>{name}</h3>
+    <span>{cuisines.join(",")}</span>
+    <h5 style={ {margin:'0px'} }>{sla.lastMileTravelString}</h5>
+    <span>{areaName}</span>
 
     </div>
-);
+    // console.log(props)
+)};
 
 const HeadComp = () => {
     return (
-        <>
-        <h2>Resturants Near You</h2>
-        <RestCard/>
-        </>
+        <div className="RestList">
+        <RestCard restr={restList[0]}/>
+        <RestCard restr={restList[1]}/>
+        <RestCard restr={restList[2]}/>
+        <RestCard restr={restList[3]}/>
+        <RestCard restr={restList[4]}/>
+        <RestCard restr={restList[5]}/>
+        <RestCard restr={restList[6]}/>
+        <RestCard restr={restList[7]}/>
+        <RestCard restr={restList[8]}/>
+        <RestCard restr={restList[9]}/>
+        <RestCard restr={restList[10]}/>
+        <RestCard restr={restList[11]}/>
+        </div>
     );
 };
 
