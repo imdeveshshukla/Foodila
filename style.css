@@ -8,6 +8,7 @@
 }
 #root{
     width: 100vw;
+    padding:0%;
 }
 .logoImg{
     width: 70px;

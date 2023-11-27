@@ -2,7 +2,7 @@
   "name": "foodila",
   "version": "1.0.0",
   "description": "This is web app of food company",
-  "main": "index.js",
+  "main": "App.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
