@@ -1,3 +1,6 @@
+import { restList } from "../utils/resturantlist";
+import RestCard from "./ResCard";
+
 const HeadComp = () => {
     return (
         <div className="RestList">
@@ -22,3 +25,4 @@ const HeadComp = () => {
     );
 };
 
+export default HeadComp;

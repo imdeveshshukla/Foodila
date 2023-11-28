@@ -1,3 +1,4 @@
+import { REST_IMG_URL } from "../utils/Images";
 
 const RestCard = ({ name,cuisines,cloudinaryImageId,sla,areaName }) => {
     
@@ -5,7 +6,7 @@ const RestCard = ({ name,cuisines,cloudinaryImageId,sla,areaName }) => {
     
     return(
     <div className="restCard">
-    <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} alt="resImg" className="resImg" />
+    <img src={REST_IMG_URL+cloudinaryImageId} alt="resImg" className="resImg" />
     
     <h3>{name}</h3>
     <span>{cuisines?.join(",")}</span>
@@ -15,3 +16,5 @@ const RestCard = ({ name,cuisines,cloudinaryImageId,sla,areaName }) => {
     </div>
     // console.log(props)
 )};
+
+export default RestCard;
