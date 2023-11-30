@@ -1,11 +1,11 @@
-import { restList } from "../utils/resturantlist";
+import { restLIst2 } from "../utils/resturantlist";
 import RestCard from "./ResCard";
 
 const HeadComp = () => {
     return (
         <div className="RestList">
         {
-            restList.map((rest)=>{
+            restLIst2.map((rest)=>{
                 return (<RestCard {...rest.info} key={rest.info.id}/>)
             })
         }
