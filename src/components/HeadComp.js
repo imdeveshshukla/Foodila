@@ -2,8 +2,7 @@ import { restList } from "../utils/resturantlist";
 import RestCard from "./ResCard";
 
 const HeadComp = () => {
-    return 
-    (
+    return (
         <div className="RestList">
         {
             restList.map((rest)=>{
